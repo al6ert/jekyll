@@ -1,0 +1,39 @@
+---
+- title: Título de la fila
+  slides:
+  - images:
+    - title: 000 Título de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer
+  - images:
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer
+  - images:
+    - title: 000 Título de la foto
+      image: DSC4452.jpg
+    caption: este es el footer
+- title: Titulo de la fila 2
+  slides:
+  - images:
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer
+  - images:
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    caption: este es el footer
+  - images:
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer

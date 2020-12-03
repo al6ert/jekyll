@@ -33,11 +33,13 @@ gtm_id: "GTM-P59B2QZ"
 optimize_id: "OPT-MV7SQLB"
 
 # Build settings
-theme: minima
+
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-responsive-image
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -58,3 +60,33 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+
+sass:
+  sass_dir: assets/css
+
+responsive_image:
+  template: _includes/responsive-picture.html
+  # [Optional, Default: 85]
+  # Quality to use when resizing images.
+  default_quality: 90  
+  sizes:
+    - width: 2400
+    - width: 1984
+    - width: 1536
+    - width: 1200  
+    - width: 992
+    - width: 768
+    - width: 576    
+    
+    
+  # [Optional, Default: assets]
+  # The base directory where assets are stored. This is used to determine the
+  # `dirname` value in `output_path_format` below.
+  #base_path: assets
+  
+  # [Optional, Default: []]
+  # By default, only images referenced by the responsive_image and responsive_image_block
+  # tags are resized. Here you can set a list of paths or path globs to resize other
+  # images. This is useful for resizing images which will be referenced from stylesheets.
+  extra_images:
+    - assets/img/*.{jpeg,jpg,png}    

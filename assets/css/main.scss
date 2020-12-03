@@ -1,0 +1,123 @@
+---
+---
+
+@import 'variables';
+@import 'bootstrap/bootstrap';
+@import 'material-icons/material-icons.css';
+@import 'fullpage/fullpage.min';
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+body { 
+    @extend .bg-light;
+}
+
+#rotate-overlay {
+    @extend 
+    .justify-content-center,
+    .align-items-center,
+    .w-100,
+    .h-100;    
+    display: none;
+    background-color: rgba($dark, .99);
+    position        : absolute;
+    z-index         : 2000;              
+}
+
+$constrast : 60%;
+#rotate-overlay i {
+    background-color        : darken($dark, $constrast);
+    background              : radial-gradient(circle, rgba($light,1) 50%, rgba($dark,.5) 85%);       
+    color                   : transparent;
+    font-size               : 200px;
+    text-shadow             : 0px 2px 3px rgba($light, 0.5);                                
+    -webkit-background-clip : text;
+    -moz-background-clip    : text;
+    background-clip         : text;                                     
+    -webkit-text-fill-color : transparent;            
+}                 
+
+.portrait-message {
+    @extend .d-flex,
+    .flex-column,
+    .text-center;
+    color: $white;
+}
+
+.slide {
+    @extend     
+    .container-fluid;
+}
+
+.fp-tableCell {
+    @extend     
+    .d-flex,
+    .justify-content-center,
+    .align-items-center;    
+}
+
+$navbar-height: 100px;
+.container {
+    @extend             
+    .h-100, .mw-100,
+    .pl-0, .pr-0, .pb-3,
+    .container-fluid,
+    .d-flex,
+    .flex-wrap,
+    .align-items-center,
+    .align-content-center;
+    //padding-top:$navbar-height;
+}
+$image-navbar-rectification: -1 * $navbar-height / 2;
+.images {
+    @extend     
+    .rounded,    
+    .flex-nowrap,
+    .align-items-center,
+    .row,
+    .col-12,
+    .p-0,
+    .m-0;
+    //margin-top: $image-navbar-rectification !important;
+    border-radius: $border-radius !important;    
+    width: auto;     
+    overflow     : hidden;    
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2),
+                inset 0px 0px 10px rgba(0,0,0,0.6);
+    max-height: 80%;
+    align-items: center; 
+}
+
+picture {
+    @extend         
+    .col,
+    .p-0;            
+    z-index: -2;
+}
+
+img {
+    @extend         
+    .img-fluid;    
+    width: 100%;
+    height   : auto;
+    
+}
+
+.title {
+    @extend
+    .h1, 
+    .d-flex,
+    .col-12,
+    .text-dark;  
+    font-family: 'Alex Brush', cursive;    
+    line-height: 0.6em;
+    margin-top:2.5rem;
+}
+.caption {
+    @extend     
+    .col-12,
+    .pr-0,
+    .text-right,
+    .font-weight-light;
+    font-size: 0.9rem;;
+}

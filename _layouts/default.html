@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang={{ site.lang | default: "en-US" }}>
+{% seo %}
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+  
+  {% include overlay.html %}
+
+  <div id="fullpage">
+    {% for row in site.data.rows %}
+      <div class="section" data-percentage="80" data-centered="true">
+        {% for slide in row.slides %}
+          <div class="slide">
+            <div class="container">      
+              <div class="title">{{ row.title}}</div>                      
+              <div class="images">              
+                {% for img in slide.images %}                                                             
+                  {% assign path = 'assets/img/' | append: img.image %}
+                  {% assign alt = img.title | append: " - Albert Pérez Rabella" %}
+                  {% responsive_image_block %}
+                    path: {{ path }}
+                    alt: {{ alt }}
+                  {% endresponsive_image_block %}
+                {% endfor %}                           
+              </div>             
+              <div class="caption">{{ slide.caption}}</div>
+            </div>                      
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% include scripts.html %}
+</body>
+
+</html>

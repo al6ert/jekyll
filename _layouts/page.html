@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang={{ site.lang | default: "en-US" }} >
+{% seo %}
+
+<head>
+  {% include head.html %}
+</head>
+
+<body class="wrapper"> 
+  <div id="app" >    
+    <div id="content">
+      {{ content }}
+    </div>
+  </div>
+  {% include scripts.html %}
+</body>
+
+</html>
