@@ -20,7 +20,7 @@
               <div class="images">              
                 {% for img in slide.images %}                                                             
                   {% assign path = 'assets/img/' | append: img.image %}
-                  {% assign alt = img.title | append: " - Albert Pérez Rabella" %}
+                  {% assign alt = img.title | append: " - " page.author %}
                   {% responsive_image_block %}
                     path: {{ path }}
                     alt: {{ alt }}
