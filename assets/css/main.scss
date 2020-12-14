@@ -6,7 +6,9 @@
 @import 'material-icons/material-icons.css';
 @import 'fullpage/fullpage.min';
 
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Suravaram&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 body { 
     @extend .bg-light;
@@ -105,19 +107,49 @@ img {
 
 .title {
     @extend
-    .h1, 
+    .h1,      
+    .pl-0,  
     .d-flex,
     .col-12,
     .text-dark;  
-    font-family: 'Alex Brush', cursive;    
+    font-family: 'DM Serif Display', serif;//'Suravaram', serif;    
     line-height: 0.6em;
     margin-top:2.5rem;
 }
-.caption {
-    @extend     
+
+.img-footer {
+    @extend
+    .pl-0, .pr-0,
+    .d-flex,
+    .flex-row,
     .col-12,
-    .pr-0,
-    .text-right,
-    .font-weight-light;
-    font-size: 0.9rem;;
+    .justify-content-between;    
 }
+
+.caption {
+    @extend         
+    .pr-0,    
+    .font-weight-light;
+    font-size: 1rem;;
+}
+
+.like-button {
+    @extend
+    .btn,
+    .border-0,    
+    .p-0;
+}
+
+.like {
+    @extend
+    .p-0,
+    .font-weight-light;
+    font-size: 1.75rem;
+    -webkit-text-stroke: 0.2px $light;
+   
+}
+
+.yes-like {
+    color: $red;
+}
+

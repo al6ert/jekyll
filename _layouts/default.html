@@ -16,18 +16,25 @@
         {% for slide in row.slides %}
           <div class="slide">
             <div class="container">      
-              <div class="title">{{ row.title}}</div>                      
+              <div class="title">{{ row.title}}</div>      
+              {% assign slide_id = "" %}
               <div class="images">              
                 {% for img in slide.images %}                                                             
+                  {% assign slide_id = slide_id | append: img.image %}
                   {% assign path = 'assets/img/' | append: img.image %}
-                  {% assign alt = img.title | append: " - " page.author %}
+                  {% assign alt = img.title | append: " - " | append: page.author %}
                   {% responsive_image_block %}
                     path: {{ path }}
                     alt: {{ alt }}
                   {% endresponsive_image_block %}
                 {% endfor %}                           
-              </div>             
-              <div class="caption">{{ slide.caption}}</div>
+              </div>        
+              <div class="img-footer">
+                <!--i class="material-icons">favorite_border</i-->
+                {% assign like_id = slide_id | slugify %}
+                {% include like.html like_id = like_id %}        
+                <div class="caption">{{ slide.caption}}</div>
+              </div>                   
             </div>                      
           </div>
         {% endfor %}

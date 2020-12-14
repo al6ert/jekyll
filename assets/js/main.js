@@ -1,4 +1,5 @@
 
+var likes;
 
 function rotate_overlay_state() {
   if(window.innerHeight > window.innerWidth){	    
@@ -10,8 +11,41 @@ function rotate_overlay_state() {
   }
 }
 
+function loadLikesLocationStorage() {
+  likes = localStorage.getItem('likes');
+  if (!likes) {
+    likes = {};
+    localStorage.setItem('likes', JSON.stringify(likes));    
+  } else {
+    likes = JSON.parse(likes);
+    for (const [key, value] of Object.entries(likes)) {
+      updateLikeButton(key, value);
+    }
+  }
+}
+
+function updateLikeButton(like_id, value) {
+  if (value) {
+    $('#' + like_id + " > i").removeClass('no-like');
+    $('#' + like_id + " > i").addClass('yes-like');    
+    $('#' + like_id + " > i").html('favorite');
+  } else {
+    $('#' + like_id + " > i").removeClass('yes-like');
+    $('#' + like_id + " > i").addClass('no-like');    
+    $('#' + like_id + " > i").html('favorite_border')
+  }
+}
+
+function changeLikeStatus(like_id) {  
+  var value = likes[like_id] ? (!likes[like_id]) : true;    
+  likes[like_id] = value;
+  localStorage.setItem('likes', JSON.stringify(likes));
+  updateLikeButton(like_id, value);
+}
+
 $( window ).ready(function() {  
-  rotate_overlay_state();
+  rotate_overlay_state();  
+  loadLikesLocationStorage();
   $('#fullpage').fullpage({
     licenseKey:'D85A2F08-EAC044F4-91FAA1F6-815EDD13',
     easingcss3:'ease-in-out',
@@ -26,7 +60,6 @@ $( window ).ready(function() {
 });
 
 $( window ).resize(function() {  
-  rotate_overlay_state();
+  rotate_overlay_state();  
 });
 
- 
