@@ -56,7 +56,12 @@ $( window ).ready(function() {
     loopHorizontal:false,	
     fadingEffect: true,
     autoScrolling:true    
-  });    
+  });  
+  
+  
+  $('.fp-prev').append('<i class="arrow arrow-prev material-icons">navigate_before</i>');
+  $('.fp-next').append('<i class="arrow arrow-next material-icons">navigate_next</i>');
+
 });
 
 $( window ).resize(function() {  
