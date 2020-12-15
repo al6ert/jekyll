@@ -16,6 +16,7 @@
   - images:
     - title: 000 Título de la foto
       image: DSC4452.jpg
+      classes: align-self-end
     caption: este es el footer
 - title: Titulo de la fila 2
   slides:

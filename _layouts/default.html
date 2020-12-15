@@ -21,11 +21,13 @@
               <div class="images">              
                 {% for img in slide.images %}                                                             
                   {% assign slide_id = slide_id | append: img.image %}
+                  {% assign classes = img.classes %}
                   {% assign path = 'assets/img/' | append: img.image %}
-                  {% assign alt = img.title | append: " - " | append: page.author %}
+                  {% assign alt = img.title | append: " - " | append: page.author %}                  
                   {% responsive_image_block %}
                     path: {{ path }}
                     alt: {{ alt }}
+                    classes: {{ classes }}
                   {% endresponsive_image_block %}
                 {% endfor %}                           
               </div>        
