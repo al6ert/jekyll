@@ -58,7 +58,8 @@ $( window ).ready(function() {
     autoScrolling:true    
   });  
   
-  
+  $('.fp-controlArrow').addClass('btn btn-arrow');  
+  //$('.fp-controlArrow').removeClass('fp-controlArrow'); 
   $('.fp-prev').append('<i class="arrow arrow-prev material-icons">navigate_before</i>');
   $('.fp-next').append('<i class="arrow arrow-next material-icons">navigate_next</i>');
 

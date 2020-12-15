@@ -58,29 +58,23 @@ $constrast : 60%;
     .align-items-center;    
 }
 
-$navbar-height: 100px;
 .container {
-    @extend             
-    .h-100, .mw-100,
-    .pl-0, .pr-0, .pb-3,
-    .container-fluid,
+    @extend 
+    .mw-100,.p-0,
     .d-flex,
-    .flex-wrap,
-    .align-items-center,
-    .align-content-center;
-    //padding-top:$navbar-height;
+    .justify-content-center,
+    .flex-column;
+    height:inherit;
 }
-$image-navbar-rectification: -1 * $navbar-height / 2;
+
 .images {
     @extend     
     .rounded,    
     .flex-nowrap,
     .align-items-center,
-    .row,
-    .col-12,
-    .p-0,
-    .m-0;
-    //margin-top: $image-navbar-rectification !important;
+    .align-self-center,
+    .align-self-stretch,
+    .row, .p-0, .m-0;        
     border-radius: $border-radius !important;    
     width: auto;     
     overflow     : hidden;    
@@ -101,29 +95,25 @@ img {
     @extend         
     .img-fluid;    
     width: 100%;
-    height   : auto;
-    
+    height: auto;    
 }
 
 .title {
     @extend
     .h1,      
-    .pl-0,  
-    .d-flex,
-    .col-12,
+    .pl-0, .mt-2,
+    .d-flex,    
     .text-dark;  
-    font-family: 'DM Serif Display', serif;//'Suravaram', serif;    
-    line-height: 0.6em;
-    margin-top:2.5rem;
+    font-family: 'DM Serif Display', serif;        
 }
 
 .img-footer {
     @extend
+    .mt-1,
     .pl-0, .pr-0,
     .d-flex,
-    .flex-row,
-    .col-12,
-    .justify-content-between;    
+    .flex-row,       
+    .justify-content-between;            
 }
 
 .caption {
@@ -152,16 +142,35 @@ img {
 .yes-like {
     color: $red;
 }
-/*
+
+
+.btn-arrow {
+    top: 50%;
+    margin-top: -2rem;
+    position: absolute;
+    z-index: 4;
+    color: $light;
+    border-color:transparent;
+    background: transparent;
+    border-width: 0px;
+    width: fit-content;
+    height: fit-content;
+    background-attachment: red;
+}
+
+.btn-arrow.fp-next {
+    right: 15px;
+}
+
+.fp-controlArrow.fp-prev {
+    width: auto;
+}
+
+.btn-arrow i {
+    pointer-events: none;
+    font-size: 4rem;
+}
+
 .fp-controlArrow {
    @extend .border-0;
 }
-
-.fp-controlArrow.fp-next {
-   right:80px; 
-}
-
-.arrow {
-    position: absolute;    
-    font-size: 4rem;
-}*/
