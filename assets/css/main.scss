@@ -108,8 +108,9 @@ img {
 .about-button {
     @extend 
     .btn,
-    .border-0,    
+    .border-0,     
     .p-0;    
+    margin-bottom: 0.5rem;  
 }
 
 .about {
