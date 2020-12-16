@@ -105,14 +105,14 @@ img {
     .align-items-end;
 }
 
-.contact-button {
+.about-button {
     @extend 
     .btn,
     .border-0,    
     .p-0;    
 }
 
-.contact {
+.about {
     @extend .p-0,
     .font-weight-light;
     font-size: 1.75rem;
