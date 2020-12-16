@@ -6,8 +6,6 @@
 @import 'material-icons/material-icons.css';
 @import 'fullpage/fullpage.min';
 
-//@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Suravaram&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 body { 
@@ -98,10 +96,32 @@ img {
     height: auto;    
 }
 
+.header {
+    @extend     
+    .mt-2, .p-0,
+    .d-flex,
+    .flex-row,
+    .justify-content-between,
+    .align-items-end;
+}
+
+.contact-button {
+    @extend 
+    .btn,
+    .border-0,    
+    .p-0;    
+}
+
+.contact {
+    @extend .p-0,
+    .font-weight-light;
+    font-size: 1.75rem;
+}
+
 .title {
     @extend
     .h1,      
-    .pl-0, .mt-2,
+    .pl-0,
     .d-flex,    
     .text-dark;  
     font-family: 'DM Serif Display', serif;        
@@ -156,14 +176,15 @@ img {
     width: fit-content;
     height: fit-content;
     background-attachment: red;
+    padding: 0px;
 }
 
 .btn-arrow.fp-next {
-    right: 15px;
+    right: 1rem;
 }
 
 .fp-controlArrow.fp-prev {
-    width: auto;
+    width: auto;    
 }
 
 .btn-arrow i {
