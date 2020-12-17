@@ -63,6 +63,7 @@ exclude:
 
 sass:
   sass_dir: assets/css
+  style: compressed
 
 responsive_image:
   template: _includes/responsive-picture.html

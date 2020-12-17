@@ -4,6 +4,9 @@
 @import 'variables';
 @import 'bootstrap/bootstrap';
 @import 'material-icons/material-icons.css';
+@import 'fontawesome/scss/fontawesome.scss';
+@import 'fontawesome/scss/brands';
+@import 'fontawesome/scss/solid';
 @import 'fullpage/fullpage.min';
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
@@ -105,15 +108,19 @@ img {
     .align-items-end;
 }
 
-.about-button {
-    @extend 
-    .btn,
-    .border-0,     
-    .p-0;    
+.contact-buttons {
+    @extend .p-0; 
     margin-bottom: 0.5rem;  
 }
 
-.about {
+.linkedin-button, .instagram-button {
+    @extend 
+    .btn,
+    .border-0,     
+    .p-0;        
+}
+
+.linkedin, .instagram {
     @extend .p-0,
     .font-weight-light;
     font-size: 1.75rem;

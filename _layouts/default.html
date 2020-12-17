@@ -18,8 +18,15 @@
             <div class="container">     
               <div class="header">
                 <div class="title">{{ row.title}}</div>     
-                <div class="about-button">                  
-                  <!--i class="about material-icons">account_circle</i--> 
+                <div class="contact-buttons">      
+                  <div class="instagram-button">          
+                    <i class="instagram fab fa-instagram"></i>
+                    <!--i class="about material-icons">account_circle</i--> 
+                  </div>
+                  <div class="linkedin-button">          
+                    <i class="linkedin fab fa-linkedin"></i>
+                    <!--i class="about material-icons">account_circle</i--> 
+                  </div>
                 </div>
               </div> 
               {% assign slide_id = "" %}
@@ -36,8 +43,7 @@
                   {% endresponsive_image_block %}
                 {% endfor %}                           
               </div>        
-              <div class="img-footer">
-                <!--i class="material-icons">favorite_border</i-->
+              <div class="img-footer">                
                 {% assign like_id = slide_id | slugify %}
                 {% include like.html like_id = like_id %}        
                 <div class="caption">{{ slide.caption}}</div>
