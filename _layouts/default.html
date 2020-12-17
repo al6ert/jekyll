@@ -12,34 +12,28 @@
 
   <div id="fullpage">
     {% for row in site.data.rows %}
-      <div class="section" data-percentage="80" data-centered="true">
+      <div id="{{ row.title | slugify }}" class="section" data-percentage="80" data-centered="true">
         {% for slide in row.slides %}
-          <div class="slide">
+          <div id="{{ slide.caption | slugify }}" class="slide">
             <div class="container">     
               <div class="header">
-                <div class="title">{{ row.title}}</div>     
+                <div class="title">{{ slide.title}}</div>     
                 <div class="contact-buttons">      
-                  <div class="instagram-button">          
-                    <i class="instagram fab fa-instagram"></i>
-                    <!--i class="about material-icons">account_circle</i--> 
-                  </div>
-                  <div class="linkedin-button">          
-                    <i class="linkedin fab fa-linkedin"></i>
-                    <!--i class="about material-icons">account_circle</i--> 
-                  </div>
+                  <div class="instagram-button"><i class="instagram fab fa-instagram"></i></div>
+                  <div class="linkedin-button"><i class="linkedin fab fa-linkedin"></i></div>
                 </div>
               </div> 
               {% assign slide_id = "" %}
               <div class="images">              
                 {% for img in slide.images %}                                                             
                   {% assign slide_id = slide_id | append: img.image %}
-                  {% assign classes = img.classes %}
+                  {% assign class = img.class %}
                   {% assign path = 'assets/img/' | append: img.image %}
                   {% assign alt = img.title | append: " - " | append: page.author %}                  
                   {% responsive_image_block %}
                     path: {{ path }}
                     alt: {{ alt }}
-                    classes: {{ classes }}
+                    class: {{ class }}
                   {% endresponsive_image_block %}
                 {% endfor %}                           
               </div>        

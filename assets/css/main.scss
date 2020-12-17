@@ -9,7 +9,8 @@
 @import 'fontawesome/scss/solid';
 @import 'fullpage/fullpage.min';
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 body { 
     @extend .bg-light;
@@ -117,7 +118,8 @@ img {
     @extend 
     .btn,
     .border-0,     
-    .p-0;        
+    .p-0,  
+    .ml-2; 
 }
 
 .linkedin, .instagram {
@@ -132,7 +134,7 @@ img {
     .pl-0,
     .d-flex,    
     .text-dark;  
-    font-family: 'DM Serif Display', serif;        
+    font-family: 'Lora', serif;//'DM Serif Display', serif;        
 }
 
 .img-footer {

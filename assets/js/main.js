@@ -1,4 +1,4 @@
-
+window.dataLayer = window.dataLayer || [];
 var likes;
 
 function rotate_overlay_state() {
@@ -43,6 +43,23 @@ function changeLikeStatus(like_id) {
   updateLikeButton(like_id, value);
 }
 
+function slideViewEvent(direction) {
+  var section = $(".section.active");
+  var slide = $(".section.active > div > div > .slide.active");
+  var title = $(".section.active > div > div > .slide.active > div > div > .title")
+  window.dataLayer.push({
+    "event": "slideView",
+    "data":{
+      "title": title.html(),
+      "section": section.attr("id"),
+      "section-index": section.index(),
+      "slide": slide.attr("id"),
+      "slide-index": slide.index(),
+      "action": direction
+    }
+  });
+}
+
 $( window ).ready(function() {  
   rotate_overlay_state();  
   loadLikesLocationStorage();
@@ -55,11 +72,18 @@ $( window ).ready(function() {
     keyboardScrolling: true,
     loopHorizontal:false,	
     fadingEffect: true,
-    autoScrolling:true    
+    autoScrolling:true,
+    afterLoad: function(origin, destination, direction){
+      var loadedSection = this;      
+      slideViewEvent(direction ? direction : 'loaded');
+    },
+    afterSlideLoad: function( section, origin, destination, direction){
+      var loadedSlide = this;
+      slideViewEvent(direction);      
+    }   
   });  
   
   $('.fp-controlArrow').addClass('btn btn-arrow');  
-  //$('.fp-controlArrow').removeClass('fp-controlArrow'); 
   $('.fp-prev').append('<i class="arrow arrow-prev material-icons">navigate_before</i>');
   $('.fp-next').append('<i class="arrow arrow-next material-icons">navigate_next</i>');
 
