@@ -1,0 +1,46 @@
+---
+- title: Categoria del proyecto
+  slides:
+  - title: El verdadero Titulo de la Slide
+    images:
+    - title: 000 Título de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer
+  - title: El verdadero Titulo de la Slide
+    images:
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer
+  - title: El verdadero Titulo de la Slide
+    images:
+    - title: 000 Título de la foto
+      image: DSC4452.jpg
+      class: align-self-end
+    caption: este es el footer
+- title: Titulo de la fila 2
+  slides:
+  - title: El verdadero Titulo de la Slide
+    images:
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer
+  - title: El verdadero Titulo de la Slide
+    images:
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    - title: 000 Titulo de la foto
+      image: DSC4452.jpg
+    caption: este es el footer
+  - title: El verdadero Titulo de la Slide
+    images:
+    - title: 001 Titulo de la foto
+      image: DSC7410.jpg
+    caption: este es el footer

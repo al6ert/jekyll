@@ -1,46 +1,153 @@
 ---
-- title: Categoria del proyecto
+- sectionTitle: Nicaragua
   slides:
-  - title: El verdadero Titulo de la Slide
+  - slideTitle: El Lago Titikaka
     images:
-    - title: 000 Título de la foto
-      image: DSC4452.jpg
-    - title: 001 Titulo de la foto
-      image: DSC7410.jpg
-    caption: este es el footer
-  - title: El verdadero Titulo de la Slide
+    - title: Lago Cocibolca
+      image: DSC_0026.jpg
+    caption: Ometepe, Nicaragua
+  - slideTitle: Inundaciones
     images:
     - title: 000 Titulo de la foto
-      image: DSC4452.jpg
+      image: DSC_0003.jpg
     - title: 001 Titulo de la foto
-      image: DSC7410.jpg
-    caption: este es el footer
-  - title: El verdadero Titulo de la Slide
+      image: DSC_0100.jpg
+    caption: Granada, Nicaragua
+  - slideTitle: El Fortín
     images:
     - title: 000 Título de la foto
-      image: DSC4452.jpg
+      image: DSC_0093.jpg
+    - title: 000 Título de la foto
+      image: DSC_0002.jpg
+      class: align-self-end
+  - slideTitle: Rosa
+    images:
+    - title: 000 Título de la foto
+      image: DSC_0064.jpg
+    - title: 000 Título de la foto
+      image: DSC_0069.jpg
       class: align-self-end
     caption: este es el footer
-- title: Titulo de la fila 2
+  - slideTitle: Niños del barrio
+    images:
+    - title: 000 Título de la foto
+      image: DSC_0142.jpg
+    - title: 000 Título de la foto
+      image: DSC_0009.jpg
+      class: align-self-end
+    caption: este es el footer
+- sectionTitle: Marruecos
   slides:
-  - title: El verdadero Titulo de la Slide
+  - slideTitle: El verdadero Titulo de la Slide
     images:
     - title: 000 Titulo de la foto
-      image: DSC4452.jpg
-    - title: 001 Titulo de la foto
-      image: DSC7410.jpg
+      image: 07_DSC0064.jpg
     caption: este es el footer
-  - title: El verdadero Titulo de la Slide
+  - slideTitle: El verdadero Titulo de la Slide
     images:
     - title: 000 Titulo de la foto
-      image: DSC4452.jpg
+      image: 04_DSC0023.jpg      
     - title: 001 Titulo de la foto
-      image: DSC7410.jpg
-    - title: 000 Titulo de la foto
-      image: DSC4452.jpg
+      image: 04_DSC0067.jpg
     caption: este es el footer
-  - title: El verdadero Titulo de la Slide
+    class: dark-arrow-prev
+  - slideTitle: El verdadero Titulo de la Slide
     images:
     - title: 001 Titulo de la foto
-      image: DSC7410.jpg
+      image: 06_DSC0011.jpg
+    - title: 001 Titulo de la foto
+      image: 06_DSC0015.jpg
     caption: este es el footer
+  - slideTitle: El verdadero Titulo de la Slide
+    images:
+    - title: 001 Titulo de la foto
+      image: DSC0009-2.jpg
+    - title: 001 Titulo de la foto
+      image: 06_DSC0071.jpg
+    caption: este es el footer
+  - slideTitle: El verdadero Titulo de la Slide
+    images:
+    - title: 001 Titulo de la foto
+      image: 06_DSC0096.jpg
+      class: align-self-end
+    caption: este es el footer
+  - slideTitle: El verdadero Titulo de la Slide
+    images:
+    - title: 001 Titulo de la foto
+      image: 06_DSC0107.jpg
+    - title: 001 Titulo de la foto
+      image: 08_DSC0083.jpg
+    caption: este es el footer
+- sectioTitle: Myanmar
+  slides:
+  - slideTitle: Daily Market Midday
+    images:
+    - title: Pahan Daily Market Midday
+      image: B080518.jpg
+      class: align-self-end
+    caption: Hpa An, Myanmar
+  - slideTitle: Pahan Daily Market Night
+    images:
+    - title: Daily Market Night
+      image: B030302.jpg
+      class: align-self-end
+    caption: Hpa An, Myanmar
+  - slideTitle: Shwedagon Pagoda
+    images:
+    - title: 000 Titulo de la foto
+      image: B050398.jpg
+    - title: 000 Titulo de la foto
+      image: B050422.jpg
+    caption: Yangon, Myanmar
+  - slideTitle: Urban Landscape
+    images:
+    - title: 000 Titulo de la foto
+      image: B060466.jpg
+    - title: 000 Titulo de la foto
+      image: B060465.jpg
+    caption: este es el footer
+  - slideTitle: Local Bus
+    images:
+    - title: Pahan Daily Market Night
+      image: B100642.jpg
+      class: align-self-start
+    caption: este es el footer
+- sectionTitle: Mar
+  slides:
+  - slideTitle: No waves no party
+    images:
+    - title: 000 Titulo de la foto
+      image: DSC5241.jpg
+    caption: Galizano, Spain
+  - slideTitle: Langre Beach
+    images:
+    - title: 000 Titulo de la foto
+      image: DSC4994.jpg
+    caption: Langre, Spain
+- sectionTitle: Family
+  slides:
+  - slideTitle: James, Fani
+    images:
+    - title: James
+      image: DSC7288.jpg
+    - title: Fani
+      image: 9030118.jpg
+    caption: Barcelona, Spain
+  - slideTitle: Sant Joan
+    images:
+    - title: 000 Titulo de la foto
+      image: DSC6301.jpg   
+    - title: 000 Titulo de la foto
+      image: DSC6304.jpg
+    - title: 000 Titulo de la foto
+      image: DSC6306.jpg   
+    - title: 000 Titulo de la foto
+      image: DSC6307.jpg
+    caption: Banyoles, Spain
+  - slideTitle: Tony
+    images:
+    - title: Tony
+      image: DSC0587.jpg
+    - title: Fani
+      image: DSC0571.jpg
+    caption: Matarraña, Spain

@@ -12,15 +12,15 @@
 
   <div id="fullpage">
     {% for row in site.data.rows %}
-      <div id="{{ row.title | slugify }}" class="section" data-percentage="80" data-centered="true">
+      <div id="{{ row.sectionTitle | slugify }}" class="section" data-percentage="80" data-centered="true">
         {% for slide in row.slides %}
-          <div id="{{ slide.caption | slugify }}" class="slide">
+          <div id="{{ slide.caption | slugify }}" class="slide {{ slide.class }}">
             <div class="container">     
               <div class="header">
-                <div class="title">{{ slide.title}}</div>     
+                <div class="title">{{ slide.slideTitle}}</div>     
                 <div class="contact-buttons">      
-                  <div class="instagram-button"><i class="instagram fab fa-instagram"></i></div>
-                  <div class="linkedin-button"><i class="linkedin fab fa-linkedin"></i></div>
+                  <a class="instagram-button" href="{{ site.instagram_url}}"><i class="instagram fab fa-instagram"></i></a>
+                  <a class="linkedin-button" href="{{ site.linkedin_url }}"><i class="linkedin fab fa-linkedin"></i></a>
                 </div>
               </div> 
               {% assign slide_id = "" %}
