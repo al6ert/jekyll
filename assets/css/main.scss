@@ -42,9 +42,8 @@ $constrast : 60%;
 }                 
 
 .portrait-message {
-    @extend .d-flex,
-    .flex-column,
-    .text-center;
+    @extend 
+    .d-flex, .flex-column, .text-center;
     color: $white;
 }
 
@@ -55,47 +54,44 @@ $constrast : 60%;
 
 .fp-tableCell {
     @extend     
-    .d-flex,
-    .justify-content-center,
-    .align-items-center;    
+    .d-flex, .justify-content-center, .align-items-center;    
 }
 
 .container {
     @extend 
-    .mw-100,.p-0,
-    .d-flex,
-    .justify-content-center,
-    .flex-column;
+    .mw-100, .p-0,
+    .d-flex, .justify-content-center, .flex-column;
     height:inherit;
 }
 
 .images {
     @extend     
-    .rounded,    
-    .flex-nowrap,
-    .align-items-center,
-    .align-self-center,
-    .align-self-stretch,
+    .flex-nowrap, .align-items-center, .align-self-center, .align-self-stretch,
     .row, .p-0, .m-0;        
-    border-radius: $border-radius !important;    
     width: auto;     
     overflow     : hidden;    
+    align-items: center; 
+    gap: .5rem;
+}
+
+.image {
+    @extend  
+    .w-100, .h-100,
+    .d-flex, .align-items-center, .align-self-stretch;
+    overflow     : hidden; 
+    border-radius: $border-radius !important;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2),
                 inset 0px 0px 10px rgba(0,0,0,0.6);
-    max-height: 80%;
-    align-items: center; 
+                align-items: center; 
 }
 
 picture {
-    @extend         
-    .col,
-    .p-0;            
+    @extend .col, .p-0;            
     z-index: -2;
 }
 
 img {
-    @extend         
-    .img-fluid;    
+    @extend .img-fluid;    
     width: 100%;
     height: auto;    
 }
@@ -103,23 +99,22 @@ img {
 .header {
     @extend     
     .mt-2, .p-0,
-    .d-flex,
-    .flex-row,
-    .justify-content-between,
-    .align-items-end;
+    .d-flex, .flex-row, .justify-content-end, .align-items-end;
+    margin-top: 0.5rem;
 }
 
 .contact-buttons {
-    @extend .p-0; 
+    @extend 
+    .d-flex,
+    .p-0; 
     margin-bottom: 0.5rem;  
 }
 
 .linkedin-button, .instagram-button {
     @extend 
     .btn,
-    .border-0,     
-    .p-0,  
-    .ml-2; 
+    .border-0, .p-0, .ml-2,
+    .d-flex, .justify-content-center, .align-items-center;
 }
 
 .linkedin, .instagram {
@@ -139,18 +134,24 @@ img {
 
 .img-footer {
     @extend
-    .mt-1,
-    .pl-0, .pr-0,
-    .d-flex,
-    .flex-row,       
-    .justify-content-between;            
+    .mt-1, .pl-0, .pr-0,
+    .d-flex, .flex-row, .justify-content-between;            
 }
 
 .caption {
     @extend         
     .pr-0,    
+    .d-flex,
     .font-weight-light;
-    font-size: 1rem;;
+    font-size: 1rem;
+}
+
+.caption h1 {
+    @extend 
+    .mr-1,
+    .font-weight-bold,
+    .h1;
+    line-height: unset;
 }
 
 .like-button {

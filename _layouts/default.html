@@ -11,37 +11,12 @@
   {% include overlay.html %}
 
   <div id="fullpage">
-    {% for row in site.data.rows %}
+    {% for row in site.data[page.data] %}
       <div id="{{ row.sectionTitle | slugify }}" class="section" data-percentage="80" data-centered="true">
         {% for slide in row.slides %}
-          <div id="{{ slide.caption | slugify }}" class="slide {{ slide.class }}">
+          <div id="{{ slide.title | append: '-' | append: slide.location | slugify }}" class="slide {{ slide.class }}">
             <div class="container">     
-              <div class="header">
-                <div class="title">{{ slide.slideTitle}}</div>     
-                <div class="contact-buttons">      
-                  <a class="instagram-button" href="{{ site.instagram_url}}"><i class="instagram fab fa-instagram"></i></a>
-                  <a class="linkedin-button" href="{{ site.linkedin_url }}"><i class="linkedin fab fa-linkedin"></i></a>
-                </div>
-              </div> 
-              {% assign slide_id = "" %}
-              <div class="images">              
-                {% for img in slide.images %}                                                             
-                  {% assign slide_id = slide_id | append: img.image %}
-                  {% assign class = img.class %}
-                  {% assign path = 'assets/img/' | append: img.image %}
-                  {% assign alt = img.title | append: " - " | append: page.author %}                  
-                  {% responsive_image_block %}
-                    path: {{ path }}
-                    alt: {{ alt }}
-                    class: {{ class }}
-                  {% endresponsive_image_block %}
-                {% endfor %}                           
-              </div>        
-              <div class="img-footer">                
-                {% assign like_id = slide_id | slugify %}
-                {% include like.html like_id = like_id %}        
-                <div class="caption">{{ slide.caption}}</div>
-              </div>                   
+              {% include slide-photography.html %}                 
             </div>                      
           </div>
         {% endfor %}

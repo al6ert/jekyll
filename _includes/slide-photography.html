@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="contact-buttons">      
+      <a class="instagram-button" href="{{ site.instagram_url }}"><i class="instagram fab fa-instagram"></i></a>
+      <a class="linkedin-button" href="{{ site.linkedin_url }}"><i class="linkedin fab fa-linkedin"></i></a>
+    </div>
+  </div> 
+  {% assign slide_id = "" %}
+  <div class="images {{ slide.class }}" >              
+    {% for img in slide.images %}   
+    <div class="image">
+      {% assign slide_id = slide_id | append: img.image %}
+      {% assign class = img.class %}
+      {% assign path = 'assets/img/' | append: img.image %}
+      {% assign alt = slide.title | append: " - " | append: forloop.index | append: " - " | append: page.author %}                  
+      {% responsive_image_block %}
+        path: {{ path }}
+        alt: {{ alt }}
+        class: {{ class }}
+      {% endresponsive_image_block %}
+    </div>                                                          
+    {% endfor %}                           
+  </div>        
+  <div class="img-footer">                
+    {% assign like_id = slide_id | slugify %}
+    {% include like.html like_id = like_id %}        
+    <div class="caption"><h1>{{ slide.title }}</h1><span>{{ slide.location }}</span></div>
+  </div>  

@@ -1,153 +1,158 @@
 ---
 - sectionTitle: Nicaragua
   slides:
-  - slideTitle: El Lago Titikaka
+  - title: El Lago Cocibolca. 
+    location: Ometepe, Nicaragua.
+    images:    
+    - image: DSC_0026.jpg
+  - title: Floods. 
+    location: Granada, Nicaragua.
     images:
-    - title: Lago Cocibolca
-      image: DSC_0026.jpg
-    caption: Ometepe, Nicaragua
-  - slideTitle: Inundaciones
+    - image: DSC_0003.jpg
+    - image: DSC_0100.jpg
+  - title: Houses. 
+    location: El Fortín, Nicaragua.
     images:
-    - title: 000 Titulo de la foto
-      image: DSC_0003.jpg
-    - title: 001 Titulo de la foto
-      image: DSC_0100.jpg
-    caption: Granada, Nicaragua
-  - slideTitle: El Fortín
-    images:
-    - title: 000 Título de la foto
-      image: DSC_0093.jpg
-    - title: 000 Título de la foto
-      image: DSC_0002.jpg
+    - image: DSC_0093.jpg
+    - image: DSC_0002.jpg
       class: align-self-end
-  - slideTitle: Rosa
+  - title: Waitting. 
+    location: Granada, Nicaragua.
     images:
-    - title: 000 Título de la foto
-      image: DSC_0064.jpg
-    - title: 000 Título de la foto
-      image: DSC_0069.jpg
-      class: align-self-end
-    caption: este es el footer
-  - slideTitle: Niños del barrio
+    - image: DSC_0064.jpg
+    - image: DSC_0069.jpg
+      class: align-self-end    
+  - title: Childhood. 
+    location: El Fortín, Nicaragua.
     images:
-    - title: 000 Título de la foto
-      image: DSC_0142.jpg
-    - title: 000 Título de la foto
-      image: DSC_0009.jpg
+    - image: DSC_0142.jpg
+    - image: DSC_0009.jpg
       class: align-self-end
-    caption: este es el footer
 - sectionTitle: Marruecos
   slides:
-  - slideTitle: El verdadero Titulo de la Slide
+  - title: City landscape.
+    location: Errachidia, Morocco.
     images:
-    - title: 000 Titulo de la foto
-      image: 07_DSC0064.jpg
-    caption: este es el footer
-  - slideTitle: El verdadero Titulo de la Slide
+    - image: 07_DSC0064.jpg
+  - title: Doors.
+    location: Merzuga, Morocco.
     images:
-    - title: 000 Titulo de la foto
-      image: 04_DSC0023.jpg      
-    - title: 001 Titulo de la foto
-      image: 04_DSC0067.jpg
-    caption: este es el footer
+    - image: 04_DSC0093.jpg
+    - image: 04_DSC0067.jpg
     class: dark-arrow-prev
-  - slideTitle: El verdadero Titulo de la Slide
+  - title: Taxi Station. 
+    location: Inezgane, Morocco.
     images:
-    - title: 001 Titulo de la foto
-      image: 06_DSC0011.jpg
-    - title: 001 Titulo de la foto
-      image: 06_DSC0015.jpg
-    caption: este es el footer
-  - slideTitle: El verdadero Titulo de la Slide
+    - image: 06_DSC0011.jpg
+    - image: 06_DSC0015.jpg
+  - title: Ali, Unkown. 
+    location: Merzuga | Sidi Ifni, Morocco.
     images:
-    - title: 001 Titulo de la foto
-      image: DSC0009-2.jpg
-    - title: 001 Titulo de la foto
-      image: 06_DSC0071.jpg
-    caption: este es el footer
-  - slideTitle: El verdadero Titulo de la Slide
+    - image: DSC0009.jpg
+    - image: 06_DSC0071.jpg    
+  - title: Sport.
+    location: Mirlef, Morocco.
     images:
-    - title: 001 Titulo de la foto
-      image: 06_DSC0096.jpg
+    - image: 06_DSC0096.jpg
       class: align-self-end
-    caption: este es el footer
-  - slideTitle: El verdadero Titulo de la Slide
+  - title: Flying 
+    location: Essauira, Morocco.
     images:
-    - title: 001 Titulo de la foto
-      image: 06_DSC0107.jpg
-    - title: 001 Titulo de la foto
-      image: 08_DSC0083.jpg
-    caption: este es el footer
+    - image: 06_DSC0107.jpg
+    - image: 08_DSC0083.jpg
+      class: align-self-start
 - sectioTitle: Myanmar
   slides:
-  - slideTitle: Daily Market Midday
+  - title: Daily Market. 
+    location: Hpa An, Myanmar.
     images:
-    - title: Pahan Daily Market Midday
-      image: B080518.jpg
+    - image: B080518.jpg
       class: align-self-end
-    caption: Hpa An, Myanmar
-  - slideTitle: Pahan Daily Market Night
+  - title: Daily Market. 
+    location: Hpa An, Myanmar.
     images:
-    - title: Daily Market Night
-      image: B030302.jpg
+    - image: B030302.jpg
       class: align-self-end
-    caption: Hpa An, Myanmar
-  - slideTitle: Shwedagon Pagoda
+  - title: Shwedagon Pagoda. 
+    location: Yangon, Myanmar.
     images:
-    - title: 000 Titulo de la foto
-      image: B050398.jpg
-    - title: 000 Titulo de la foto
-      image: B050422.jpg
-    caption: Yangon, Myanmar
-  - slideTitle: Urban Landscape
+    - image: B050398.jpg
+    - image: B050422.jpg
+  - title: Road Rest Area. 
+    location: From Hpa An to Rangun, Myanmar.
     images:
-    - title: 000 Titulo de la foto
-      image: B060466.jpg
-    - title: 000 Titulo de la foto
-      image: B060465.jpg
-    caption: este es el footer
-  - slideTitle: Local Bus
+    - image: B060466.jpg
+    - image: B060465.jpg
+  - title: Public Transport. 
+    location: Myanmar.
     images:
-    - title: Pahan Daily Market Night
-      image: B100642.jpg
+    - image: B100642.jpg
       class: align-self-start
-    caption: este es el footer
-- sectionTitle: Mar
+  - title: Boats.
+    location: Inle Lake, Myanmar.
+    images:
+    - image: B140841.jpg
+    - image: B140830.jpg
+  - title: Boatman.
+    location: Inle Lake, Myanmar.
+    images:
+    - image: B140769.jpg
+- sectionTitle: Sea
   slides:
-  - slideTitle: No waves no party
+  - title: No waves no party. 
+    location: Galizano, Spain.
     images:
-    - title: 000 Titulo de la foto
-      image: DSC5241.jpg
-    caption: Galizano, Spain
-  - slideTitle: Langre Beach
+    - image: DSC5241.jpg
+  - title: Langre Beach. 
+    location: Spain.
     images:
-    - title: 000 Titulo de la foto
-      image: DSC4994.jpg
-    caption: Langre, Spain
+    - image: DSC4994.jpg
+- sectionTitle: Japan
+  slides:
+  - title: Sumo.
+    location: Tokio, Japan.
+    images: 
+    - image: 9020363.jpg  
+  - title: Nikkō Tōshō-gū.
+    location: Nikko, Japan.
+    images:
+    - image: 8120104.jpg
+    - image: 8120112.jpg 
+  - title: Gasolinera | Nikka Wysky.
+    location: Nikka, Japan.
+    images: 
+    - image: 8160456.jpg
+    - image: 8140255.jpg
+  - title: Saloon.
+    location: Tokyo, Japan.
+    images: 
+    - image: 8080056.jpg
+  - title: Lines
+    location: Japan.
+    images: 
+    - image: 8180584.jpg
+    - image: 814031.jpg
+  - title: Fish Market | Akihabara.
+    location: Tokyo, Japan.
+    images: 
+    - image: 8100001.jpg
+    - image: 8080059.jpg    
 - sectionTitle: Family
   slides:
-  - slideTitle: James, Fani
+  - title: Jaume, Estefania. 
+    location: Barcelona, Spain.
     images:
-    - title: James
-      image: DSC7288.jpg
-    - title: Fani
-      image: 9030118.jpg
-    caption: Barcelona, Spain
-  - slideTitle: Sant Joan
+    - image: DSC7288.jpg
+    - image: 9030118.jpg
+  - title: Núria, Genis, Emili, Gina. 
+    location: Banyoles, Spain.
     images:
-    - title: 000 Titulo de la foto
-      image: DSC6301.jpg   
-    - title: 000 Titulo de la foto
-      image: DSC6304.jpg
-    - title: 000 Titulo de la foto
-      image: DSC6306.jpg   
-    - title: 000 Titulo de la foto
-      image: DSC6307.jpg
-    caption: Banyoles, Spain
-  - slideTitle: Tony
+    - image: DSC6301.jpg   
+    - image: DSC6304.jpg    
+    - image: DSC6307.jpg
+    - image: DSC6306.jpg       
+  - title: Tony. 
+    location: Matarraña, Spain.
     images:
-    - title: Tony
-      image: DSC0587.jpg
-    - title: Fani
-      image: DSC0571.jpg
-    caption: Matarraña, Spain
+    - image: DSC0587.jpg
+    - image: DSC0571.jpg

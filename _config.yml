@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Albert Pérez Rabella Photography
+email: albertperezrabell@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Photo Viewer exploration project.
+  Designed as a mobile application and using my own photographs as a project. 
+  In addition, I also show my photos to the people I love the most.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -80,10 +80,10 @@ responsive_image:
     - width: 992
     - width: 768
     - width: 576    
-    - width: 320
+    - width: 480
   # [Optional, Default: true]
   # Whether or not to save the generated assets into the source folder.
-  save_to_source: false
+  save_to_source: true
 
   # [Optional, Default: false]
   # Cache the result of {% responsive_image %} and {% responsive_image_block %}

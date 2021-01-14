@@ -36,21 +36,26 @@ function updateLikeButton(like_id, value) {
   }
 }
 
+function sendToDataLayer(data) {
+  window.dataLayer.push(data);
+}
+
 function changeLikeStatus(like_id) {  
   var value = likes[like_id] ? (!likes[like_id]) : true;    
   likes[like_id] = value;
   localStorage.setItem('likes', JSON.stringify(likes));
+  sendToDataLayer( value ? { "event": "like" } : { "event" : "dislike" });
   updateLikeButton(like_id, value);
 }
 
 function slideViewEvent(direction) {
   var section = $(".section.active");
-  var slide = $(".section.active > div > div > .slide.active");
-  var title = $(".section.active > div > div > .slide.active > div > div > .title")
-  window.dataLayer.push({
+  var slide = $(".section.active .slide.active");
+  var title = $(".section.active .slide.active h1").html() + " - " + $(".section.active .slide.active .caption span").html()
+  sendToDataLayer({
     "event": "slideView",
     "data":{
-      "title": title.html(),
+      "title": title,
       "section": section.attr("id"),
       "section-index": section.index(),
       "slide": slide.attr("id"),
