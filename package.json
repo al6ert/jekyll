@@ -2,7 +2,8 @@
   "name": "jekyll",
   "version": "1.0.0",
   "description": "My website portfolio",
-  "dependencies": {    
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.5.3",
     "fullpage.js": "^3.0.9",
     "jquery": "^3.5.1",
