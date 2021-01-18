@@ -5,5 +5,3 @@ _site
 **/.DS_Store
 vendor
 node_modules
-assets/img
-assets/resized
