@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp -r node_modules/@fortawesome/fontawesome-free/ assets/css/fontawesome/ && cp -r node_modules/material-icons/iconfont/ assets/css/material-icons/ && cp -r node_modules/fullpage.js/dist/fullpage.min.css assets/css/fullpage/ && cp -r node_modules/fullpage.js/dist/fullpage.extensions.min.js assets/js/fullpage/ && cp -r node_modules/jquery/dist/jquery.slim.min.js assets/js/jquery/ && cp -r node_modules/popper.js/dist/umd/popper.min.* assets/js/popper/ && cp -r node_modules/bootstrap/dist/js/bootstrap.min.* assets/js/bootstrap/ && cp -r node_modules/bootstrap/scss/ assets/css/bootstrap/"
+    "build": "cp -r node_modules/@fortawesome/fontawesome-free/ assets/css/fontawesome/ && cp -r node_modules/material-icons/iconfont/ assets/css/material-icons/ && cp -r node_modules/fullpage.js/dist/fullpage.min.css assets/css/fullpage/ && cp -r node_modules/fullpage.js/dist/fullpage.extensions.min.js assets/js/fullpage/ && cp -r node_modules/jquery/dist/jquery.min.js assets/js/jquery/ && cp -r node_modules/popper.js/dist/umd/popper.min.* assets/js/popper/ && cp -r node_modules/bootstrap/dist/js/bootstrap.min.* assets/js/bootstrap/ && cp -r node_modules/bootstrap/scss/ assets/css/bootstrap/"
   },
   "repository": {
     "type": "git",
