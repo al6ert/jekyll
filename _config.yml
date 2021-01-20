@@ -81,6 +81,8 @@ responsive_image:
     - width: 768
     - width: 576    
     - width: 480
+    - width: 250
+    
   # [Optional, Default: true]
   # Whether or not to save the generated assets into the source folder.
   save_to_source: false
